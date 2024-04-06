@@ -1,6 +1,6 @@
 # learn_JSON
 
-# Fetch JSON data in JavaScript from an external file using fetch or XMLHttpRequest. Parse the data, then display it in HTML. 
+# Fetch JSON data in JavaScript from an external file using XMLHttpRequest. Parse the data, then display it in HTML. 
 
 Mobile Gallery By JSON File
 
