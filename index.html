@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function getDetails(){
+        var xmlhttp=new XMLHttpRequest()
+        xmlhttp.open("GET","index.json",false)
+        xmlhttp.send()
+        if(xmlhttp.readyState==4 && xmlhttp.status==200){
+        var result = xmlhttp.responseText;
+        var o = JSON.parse(result)
+        var table = "";
+        for(let i=0;i<o.length;i++){
+            table+='<table border=3 >\
+            <tr><th width=80>Model</th><td width=80>'+o[i]["model"]+'</td> \
+            <td rowspan=6><img src='+o[i].image+' class=img width=100></td>\</tr>\
+            <tr><th>Brand</th><td>'+o[i].brand+'</td></tr>\
+            <tr><th>Ram</th><td>'+o[i].ram+'</td></tr>\
+            <tr><th>Rom</th><td>'+o[i].rom+'</td></tr>\
+            <tr><th>Price</th><td>'+o[i].price+'</td></tr>\
+            <tr><th>Stock</th><td>'+o[i].stock+'</td></tr>\
+            <br/>\
+            </table>'
+        }
+            document.getElementById("show").innerHTML=table
+        }
+    }
+</script>
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .center {
+        border: 5px solid black;
+        padding: 40px;
+        width: 500px;
+    }
+</style>
+<body onload="getDetails()">
+    
+    <div class="container">
+        <div class="center">
+            <center>
+            <h1>Mobile Gallery By JSON File<hr></h1>       
+            <div id="show"></div>
+            </center>
+        </div>
+    </div>
+</body>
+</html>

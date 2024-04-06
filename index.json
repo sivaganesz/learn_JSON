@@ -1,0 +1,42 @@
+[
+    {
+        "model":"iphone - Xs",
+        "brand":"apple",
+        "ram":"4GB",
+        "rom":"64GB",
+        "camera":"12MP",
+        "price":"35999.00",
+        "stock":true,
+        "image":"https://images-cdn.ubuy.co.in/6543880e5b61d95d8b01e611-restored-apple-iphone-xs-64gb-space-gray.jpg"
+    },
+    {
+        "model":"realme - 10",
+        "brand":"realme",
+        "ram":"4GB",
+        "rom":"64GB",
+        "camera":"50MP",
+        "price":"12999.00",
+        "stock":true,
+        "image":"https://www.assuredzone.com/wp-content/uploads/2022/11/Realme-10.jpg"
+    },
+    {
+        "model":"Nothing 2a",
+        "brand":"nothing",
+        "ram":"8GB",
+        "rom":"128GB",
+        "camera":"48MP",
+        "price":"30999.00",
+        "stock":false,
+        "image":"https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1710331546/Croma%20Assets/Communication/Mobiles/Images/305347_0_uedcyr.png?tr=w-480"
+    },
+    {
+        "model":"Pixel - 6(a)",
+        "brand":"google",
+        "ram":"6GB",
+        "rom":"64GB",
+        "camera":"32MP",
+        "price":"35999.00",
+        "stock":true,
+        "image":"https://akm-img-a-in.tosshub.com/indiatoday/images/device/1683285701Pixel6-800x800_one_to_one.png?VersionId=ZuqwtLKGvUIAtfotExGbrmy2EmtqItdy&size=220:220"
+    }
+]
